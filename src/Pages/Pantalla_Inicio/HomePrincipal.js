@@ -4,6 +4,7 @@ import { StyleSheet, Platform, Text, View, StatusBar, ScrollView, Button } from 
 import CardBasico from '../../Componentes/CardBasico';
 import CardRegistrar from '../../Componentes/CardRegistrar';
 import CardListar from '../../Componentes/CardListar';
+import CarEliminar from '../../Componentes/CardEliminar';
 
 export default function HomePrincipal() {
     const [colorFondo, setColorFondo] = useState('#e1b8d4ff');
@@ -25,6 +26,8 @@ export default function HomePrincipal() {
                 <CardBasico/>
                 <CardRegistrar/>
                 <CardListar/>
+                <CarEliminar/>
+            
                 
             </View>
         </ScrollView>
