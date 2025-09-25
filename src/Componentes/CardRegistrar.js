@@ -1,13 +1,14 @@
 import { TouchableOpacity, Image, StyleSheet, Text, View } from "react-native";
 
-export default function CardRegistrar() {
+export default function CardRegistrar({navigation}) {
     return (
         <View style={style.card}>
             <Image style={style.img} source={{ uri: 'https://static.vecteezy.com/system/resources/previews/008/693/280/original/note-book-with-pen-gold-cartoon-vector.jpg' }} />
             <View style={style.card_contenido} >
 
                 {/*Boton Sombreado*/}
-                <TouchableOpacity style={style.botonSombreado}>
+                <TouchableOpacity style={style.botonSombreado}
+                onPress={() => navigation.navigate('HomeAlumnos')}>
                     <Text style={style.texto}>Registrar</Text>
                 </TouchableOpacity>
 
