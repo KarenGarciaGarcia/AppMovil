@@ -1,13 +1,14 @@
 import { TouchableOpacity, Image, StyleSheet, Text, View } from "react-native";
 
-export default function CarEliminar() {
+export default function CarEliminar({navigation}) {
     return (
         <View style={style.card}>
             <Image style={style.img} source={{ uri: 'https://img.freepik.com/vector-premium/ilustracion-dibujos-animados-simples-papel-que-contiene-lista-actividades-boligrafo-concepto-oficina_558723-130.jpg?w=2000' }} />
             <View style={style.card_contenido} >
 
                 {/*Boton Sombreado*/}
-                <TouchableOpacity style={style.botonSombreado}>
+                <TouchableOpacity style={style.botonSombreado}
+                onPress={() => navigation.navigate('HomeAlumnos')}>
                     <Text style={style.texto}>Eliminar</Text>
                 </TouchableOpacity>
 
