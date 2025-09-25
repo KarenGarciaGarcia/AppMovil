@@ -1,14 +1,16 @@
 import { TouchableOpacity, Image, StyleSheet, Text, View } from "react-native";
 
-export default function CardListar() {
+export default function CardListar({navigation}) {
     return (
         <View style={style.card}>
             <Image style={style.img} source={{ uri: 'http://dti.anahuacmayab.mx/wp-content/uploads/2020/01/disponibilidadBS.jpg' }} />
             <View style={style.card_contenido} >
 
                 {/*Boton Sombreado*/}
-                <TouchableOpacity style={style.botonSombreado}>
+                <TouchableOpacity style={style.botonSombreado}
+                onPress={() => navigation.navigate('HomeAlumnos')}>
                     <Text style={style.texto}>Listar</Text>
+                     
                 </TouchableOpacity>
 
 
