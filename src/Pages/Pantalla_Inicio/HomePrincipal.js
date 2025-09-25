@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { StyleSheet, Platform, Text, View, StatusBar, ScrollView, Button } from 'react-native';
+import CardBasico from '../../Componentes/CardBasico';
 
 export default function HomePrincipal() {
     const [colorFondo, setColorFondo] = useState('#e1b8d4ff');
@@ -18,7 +19,9 @@ export default function HomePrincipal() {
         <ScrollView >
             <View style={[style.mainS, { backgroundColor: colorFondo }]}>
                 <Text style={style.title}>Página Principal </Text>
-                <Button title="Cambiar color" onPress={cambiarColor} />
+                <Button title="Cambiar color" onPress={cambiarColor}/>
+                <CardBasico/>
+                
             </View>
         </ScrollView>
 
