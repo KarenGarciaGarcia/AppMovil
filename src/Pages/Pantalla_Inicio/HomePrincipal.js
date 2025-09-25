@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { StyleSheet, Platform, Text, View, StatusBar, ScrollView, Button } from 'react-native';
 import CardBasico from '../../Componentes/CardBasico';
+import CardRegistrar from '../../Componentes/CardRegistrar';
 
 export default function HomePrincipal() {
     const [colorFondo, setColorFondo] = useState('#e1b8d4ff');
@@ -21,6 +22,7 @@ export default function HomePrincipal() {
                 <Text style={style.title}>Página Principal </Text>
                 <Button title="Cambiar color" onPress={cambiarColor}/>
                 <CardBasico/>
+                <CardRegistrar/>
                 
             </View>
         </ScrollView>
